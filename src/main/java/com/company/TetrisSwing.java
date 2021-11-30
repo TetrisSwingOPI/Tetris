@@ -177,7 +177,7 @@ public class TetrisSwing extends JComponent implements KeyListener, ActionListen
     /**
      * Method which shows label after game over
      */
-    static void showRestartLabel() {
+    static int showRestartLabel() {
         finishPaint = true;
         Font fontRestart = new Font(FONTSTYLE, Font.PLAIN, 36);
         restartLabel.setFont(fontRestart);
@@ -186,6 +186,8 @@ public class TetrisSwing extends JComponent implements KeyListener, ActionListen
                 "Your score: " + score +
                 "<br>Press space to start again<html>");
         restartLabel.setVisible(true);
+        int i = 5;
+        return (i);
     }
 
     /**
